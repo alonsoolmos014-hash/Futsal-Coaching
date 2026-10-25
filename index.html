@@ -689,13 +689,13 @@ initInafTools();drawBoard();
 <script type="module">
   // Esta configuración es PÚBLICA, pero no pegues cuentas de servicio ni claves privadas.
   const firebaseConfig = {
-    apiKey: "PEGA_TU_API_KEY",
-    authDomain: "PEGA_TU_AUTH_DOMAIN",
-    projectId: "PEGA_TU_PROJECT_ID",
-    appId: "PEGA_TU_APP_ID"
+    apiKey: "AIzaSyAqJp--XPvLAnNprFynvfFbhRbzD94ByLw",
+    authDomain: "futsal-coaching.firebaseapp.com",
+    projectId: "futsal-coaching",
+    appId: "1:517172604422:web:07f69da25e81fa90d49d87"
   };
   // Esta dirección habilita la interfaz de administrador. La autoridad real es firestore.rules.
-  const OWNER_EMAIL = "tu_correo@gmail.com";
+  const OWNER_EMAIL = "alonsoolmos014@gmail.com";
   const configured = Object.values(firebaseConfig).every(v => typeof v === 'string' && v && !v.startsWith('PEGA_TU_'))
     && OWNER_EMAIL.includes('@') && OWNER_EMAIL !== 'tu_correo@gmail.com';
 
