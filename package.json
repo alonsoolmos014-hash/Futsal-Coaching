@@ -1,0 +1,12 @@
+{
+  "name": "olmos-coaching-github-firebase",
+  "private": true,
+  "version": "6.0.0",
+  "scripts": {
+    "prepare:hosting": "node scripts/sync-public.mjs && node scripts/verify-project.mjs",
+    "test": "node scripts/sync-public.mjs && node scripts/verify-project.mjs && node tests/test_local.js && node --check pro5.js && node --check community.js && node tests/test_community.js && node --check functions/index.js",
+    "deploy:hosting": "npm run prepare:hosting && firebase deploy --only hosting",
+    "deploy:rules": "firebase deploy --only firestore:rules",
+    "deploy:functions": "firebase deploy --only functions"
+  }
+}
